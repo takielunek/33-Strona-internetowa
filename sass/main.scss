@@ -1,0 +1,131 @@
+$grid-gutter-width: 0px;
+
+@import './colors';
+@import './components';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+
+// NAV
+
+.nav-link,
+.dropdown-item {
+	font-weight: 400;
+	&:hover {
+		font-weight: 600;
+	}
+}
+
+.search-input {
+	max-width: 0;
+	overflow: hidden;
+	transition: max-width 0.5s ease-in-out;
+	&:focus {
+		max-width: 200px;
+	}
+}
+
+.navbar-toggler {
+	color: transparent;
+}
+
+// HEADER
+
+.header-heading {
+	font-size: 60px;
+}
+
+.btn-realisation {
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+	&:hover {
+		background-color: $main-color-hover;
+		color: $green-color;
+	}
+}
+
+// .carousel-control {
+// 	width: 192px;
+// 	height: 96px;
+// 	background-color: $secondary-color;
+// 	padding: 24px 32px;
+// 	display: flex;
+// 	justify-content: center;
+// 	position: absolute;
+// 	bottom: 0;
+// 	right: 0;
+// }
+// .btn-left,
+// .btn-right {
+// 	width: 48px;
+// 	height: 48px;
+// 	border: 1px solid transparent;
+// 	padding: 0;
+// 	transition: scale 0.3s;
+// 	&:hover {
+// 		scale: 1.3;
+// 	}
+// }
+
+// .img-rotate {
+// 	transform: scaleX(-1);
+// }
+// .slider {
+// 	overflow: hidden;
+// }
+// .slider-box {
+// 	display: inline-flex;
+// 	transition: transform 0.5s;
+// }
+// .slider-img {
+// 	object-fit: cover;
+// 	height: 737px;
+// 	width: 720px;
+// }
+
+// OFFERS
+
+.card {
+	width: 378px;
+	height: 370px;
+	padding: 48px 40px;
+	border-radius: 28px;
+	border: 1px solid transparent;
+	transition: scale 0.3s;
+	&:hover {
+		scale: 1.1;
+	}
+}
+
+.card-body {
+	padding: 0;
+}
+
+.offer-cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-title {
+	padding: 0;
+	margin-bottom: 12px;
+}
+
+.card-text {
+	line-height: 21px;
+	margin-bottom: 60px;
+}
+
+.card-link {
+	transition: font-weight 0.2s;
+	&:hover {
+		font-weight: 600;
+	}
+}
