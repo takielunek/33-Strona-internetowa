@@ -12,7 +12,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-// NAV
+// NAVBAR
 
 .nav-link,
 .dropdown-item {
@@ -90,6 +90,12 @@ body {
 // 	width: 720px;
 // }
 
+@media (max-width: 450px) {
+.header-heading {
+	font-size: 50px;
+}
+}
+
 // OFFERS
 
 .card {
@@ -129,3 +135,120 @@ body {
 		font-weight: 600;
 	}
 }
+
+
+@media (max-width: 1320px) {
+	.card {
+		margin: auto;
+		margin-top: 50px;
+	}
+}
+
+// ABOUT US
+
+.aboutUs-btn {
+	background-color: $green-color;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: $green-color-hover;
+		color: $secondary-color;
+	}
+}
+
+// REALISATION
+
+.realisations {
+	position: relative;
+	// overflow: hidden;
+}
+.realisations-item img {
+	width: 451px;
+	margin-bottom: 43px;
+	// cursor: pointer;
+	// transition: scale 0.3s;
+	// &:hover {
+	// 	scale: 1.05;
+	// }
+}
+.realisations .overlay {
+	position: absolute;
+	// height: 1700px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	// background: linear-gradient(180deg, $gradient);
+	display: flex;
+	justify-content: center;
+	// align-items: flex-end;
+	padding-bottom: 820px;
+}
+// .overlay.expanded {
+// 	display: none;
+// }
+// .realisation-btn {
+// 	transition:
+// 		background-color 0.3s,
+// 		color 0.3s;
+// 	&:hover {
+// 		background-color: $main-color-hover;
+// 		color: $dark;
+// 	}
+// }
+// .realisations-container {
+// 	// max-height: 1824px;
+// 	overflow: hidden;
+// 	transition: max-height 0.3s ease-in-out;
+// }
+// .realisations-container.expanded {
+// 	// max-height: 2490px;
+// }
+
+// CONTACT
+
+.contact-btn {
+	background-color: $secondary-color;
+	transition: background-color 0.3s;
+	&:hover {
+		background-color: $main-color-hover;
+	}
+}
+
+
+@media (max-width: 450px) {
+	.heading3 {
+		font-size: 35px;
+	}
+	}
+
+@media (max-width: 992px) {
+	.col2 {
+		margin-top: 50px;
+	}
+}
+
+// FOOTER
+
+
+
+.link,
+.footer-text {
+	list-style: none;
+	text-decoration: none;
+	color: $secondary-color;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+// MEDIA 
+
+@media (max-width: 450px) {
+	.heading2 {
+		font-size: 40px;
+	}
+	}

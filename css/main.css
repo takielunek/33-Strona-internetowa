@@ -12054,6 +12054,11 @@ body {
   color: #1b5b31;
 }
 
+@media (max-width: 450px) {
+  .header-heading {
+    font-size: 50px;
+  }
+}
 .card {
   width: 378px;
   height: 370px;
@@ -12090,4 +12095,71 @@ body {
 }
 .card-link:hover {
   font-weight: 600;
+}
+
+@media (max-width: 1320px) {
+  .card {
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+.aboutUs-btn {
+  background-color: #1b5b31;
+  transition: background-color 0.3s;
+}
+.aboutUs-btn:hover {
+  background-color: #197539;
+  color: #f5f0ec;
+}
+
+.realisations {
+  position: relative;
+}
+
+.realisations-item img {
+  width: 451px;
+  margin-bottom: 43px;
+}
+
+.realisations .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 820px;
+}
+
+.contact-btn {
+  background-color: #f5f0ec;
+  transition: background-color 0.3s;
+}
+.contact-btn:hover {
+  background-color: #ecd1ba;
+}
+
+@media (max-width: 450px) {
+  .heading3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 992px) {
+  .col2 {
+    margin-top: 50px;
+  }
+}
+.link,
+.footer-text {
+  list-style: none;
+  text-decoration: none;
+  color: #f5f0ec;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 450px) {
+  .heading2 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
