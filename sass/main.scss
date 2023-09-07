@@ -51,44 +51,46 @@ body {
 	}
 }
 
-// .carousel-control {
-// 	width: 192px;
-// 	height: 96px;
-// 	background-color: $secondary-color;
-// 	padding: 24px 32px;
-// 	display: flex;
-// 	justify-content: center;
-// 	position: absolute;
-// 	bottom: 0;
-// 	right: 0;
-// }
-// .btn-left,
-// .btn-right {
-// 	width: 48px;
-// 	height: 48px;
-// 	border: 1px solid transparent;
-// 	padding: 0;
-// 	transition: scale 0.3s;
-// 	&:hover {
-// 		scale: 1.3;
-// 	}
-// }
+.img-rotate {
+	transform: scaleX(-1);
+}
+.slider {
+	width: 100%;
+	height: 737px;
+	overflow: hidden;
+}
+.slider-box {
+	display: inline-flex;
+	transition: transform 0.5s;
 
-// .img-rotate {
-// 	transform: scaleX(-1);
-// }
-// .slider {
-// 	overflow: hidden;
-// }
-// .slider-box {
-// 	display: inline-flex;
-// 	transition: transform 0.5s;
-// }
-// .slider-img {
-// 	object-fit: cover;
-// 	height: 737px;
-// 	width: 720px;
-// }
+
+}
+.slider-img {
+	width: 720px;
+	height: 737px;
+	object-fit: cover;
+}
+
+.carousel-control {
+	width: 192px;
+	height: 96px;
+	background-color: $secondary-color;
+	padding: 24px 32px;
+	display: flex;
+	bottom: 0;
+	right: 0;
+}
+.btn-left,
+.btn-right {
+	width: 48px;
+	height: 48px;
+	border: 1px solid transparent;
+	padding: 0;
+	transition: scale 0.3s;
+	&:hover {
+		scale: 1.3;
+	}
+}
 
 @media (max-width: 450px) {
 	.header-heading {
@@ -159,49 +161,46 @@ body {
 
 .realisations {
 	position: relative;
-	// overflow: hidden;
 }
 .realisations-item img {
 	width: 451px;
 	margin-bottom: 43px;
-	// cursor: pointer;
-	// transition: scale 0.3s;
-	// &:hover {
-	// 	scale: 1.05;
-	// }
+	cursor: pointer;
+	transition: scale 0.3s;
+	&:hover {
+		scale: 1.05;
+	}
 }
 .realisations .overlay {
 	position: absolute;
-	// height: 1700px;
+	height: 80%;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	// background: linear-gradient(180deg, $gradient);
+	background: linear-gradient(180deg, $gradient);
 	display: flex;
 	justify-content: center;
-	// align-items: flex-end;
+	align-items: flex-end;
 	padding-bottom: 820px;
 }
-// .overlay.expanded {
-// 	display: none;
-// }
-// .realisation-btn {
-// 	transition:
-// 		background-color 0.3s,
-// 		color 0.3s;
-// 	&:hover {
-// 		background-color: $main-color-hover;
-// 		color: $dark;
-// 	}
-// }
-// .realisations-container {
-// 	// max-height: 1824px;
-// 	overflow: hidden;
-// 	transition: max-height 0.3s ease-in-out;
-// }
-// .realisations-container.expanded {
-// 	// max-height: 2490px;
-// }
+.overlay.expanded {
+	display: none;
+}
+.realisation-btn {
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+	&:hover {
+		background-color: rgba(0,0,0,0.1);
+		color: $dark;
+	}
+}
+.realisations-container {
+	
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+}
+
 
 // CONTACT
 
@@ -242,8 +241,6 @@ body {
 }
 
 @media (max-width: 500px) {
-
-
 	.footer1 {
 		display: flex;
 		flex-direction: column;
