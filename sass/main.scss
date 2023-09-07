@@ -91,9 +91,9 @@ body {
 // }
 
 @media (max-width: 450px) {
-.header-heading {
-	font-size: 50px;
-}
+	.header-heading {
+		font-size: 50px;
+	}
 }
 
 // OFFERS
@@ -135,7 +135,6 @@ body {
 		font-weight: 600;
 	}
 }
-
 
 @media (max-width: 1320px) {
 	.card {
@@ -214,12 +213,11 @@ body {
 	}
 }
 
-
 @media (max-width: 450px) {
 	.heading3 {
 		font-size: 35px;
 	}
-	}
+}
 
 @media (max-width: 992px) {
 	.col2 {
@@ -228,8 +226,6 @@ body {
 }
 
 // FOOTER
-
-
 
 .link,
 .footer-text {
@@ -240,15 +236,43 @@ body {
 	margin: 0;
 }
 
+.footer1 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
 
 
+	.footer1 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
 
+@media (max-width: 640px) {
+	.text-made-by {
+		margin-top: 20px;
+	}
+}
 
+@media (max-width: 805px) {
+	.button1 {
+		margin: 20px 40px 0 0;
+	}
+}
 
-// MEDIA 
+@media (max-width: 1200px) {
+	.footer1 {
+		margin-top: 62px;
+	}
+}
+
+// MEDIA
 
 @media (max-width: 450px) {
 	.heading2 {
 		font-size: 40px;
 	}
-	}
+}

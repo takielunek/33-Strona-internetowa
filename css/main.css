@@ -12158,6 +12158,36 @@ body {
   margin: 0;
 }
 
+.footer1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+  .link {
+    text-align: center;
+  }
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  .text-made-by {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 805px) {
+  .button1 {
+    margin: 20px 40px 0 0;
+  }
+}
+@media (max-width: 1200px) {
+  .footer1 {
+    margin-top: 62px;
+  }
+}
 @media (max-width: 450px) {
   .heading2 {
     font-size: 40px;
