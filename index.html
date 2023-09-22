@@ -14,9 +14,6 @@
 <body>
 
     <div class="wrapper">
-
-
-
         <nav class="navbar navbar-expand-lg navbar-light" style="padding: 16px 64px">
             <div class="container-fluid" style="padding: 0;">
                 <a class="navbar-brand" href="#"><img src="icons/logo-giarddesign-black.svg" alt=""></a>
@@ -61,8 +58,8 @@
                 </div>
             </div>
         </nav>
-        <div class="row">
-            <div class="col-lg-6 col-sm-12"
+        <div class="row carousel-row">
+            <div class="col-lg-6 col-12"
                 style="background-color: #dcc1ab; padding: 144.5px 0px 144.5px 0px;  padding-left: 5%; padding-right: 9%;">
                 <h1 class="header-heading" style="margin-bottom: 44px; line-height: 70px;">Nowoczesna aranżacja <br>
                     Twojego ogrodu</h1>
@@ -81,10 +78,10 @@
                         realizacje <img src="icons/arrow-down.svg" alt="Plik SVG" /></a>
                 </div>
             </div>
-            <div class="col-lg-6 col-12" style="padding: 0; ">
-                <div class="slider" style="position: relative;">
-                    <div class="slider-box"  style="position: static;">
-                            <img class="slider-img  img-rotate" id="myElement" src="img/photo.png"
+            <div class="col-lg-6 col-12" style="padding: 0; height: inherit;" id="myElement">
+                <div class="slider" style="position: relative;" >
+                    <div class="slider-box" >
+                            <img class="slider-img  img-rotate" src="img/photo.png"
                                 alt="Nowoczesna aranżacja białej ściany z elementami roślin w drewnianych ramach.">
                             <img class="slider-img" src="img/photo5.png" alt="Karp oraz karp koi w stawie.">
                             <img class="slider-img" src="img/photo6.png" alt="Zadaszony drewniany taras.">
@@ -171,13 +168,8 @@
                 <a href="#aboutUs" class="aboutUs-btn btn btn-outline-light rounded-pill text1"
                     style="padding: 12px 22px 14px 22px"> Poznaj nas bliżej
                     <img src="icons/arrow-right-light.svg" alt="Plik SVG" /></a>
-
             </div>
         </div>
-
-
-
-
         <div class="realisations-container" id="realisations" style="background-color: #dcc1ab; padding: 120px 0 0 0;">
             <div style="margin-left: 11%;">
                 <span class="realisations heading1" style="color: #1b5b31; margin-bottom: 16px;">Realizacje</span>
@@ -185,7 +177,6 @@
                     Nasze <span class="fst-italic">projekty</span>
                 </h2>
             </div>
-
             <div class="realisations">
                 <div class="realisations-grid" style="margin: 0 auto">
                     <div class="realisations-item">
@@ -236,7 +227,6 @@
                 </div>
             </div>
         </div>
-
         <div style="background-color: #ffffff; padding: 60px 0px 60px 0px; padding-left: 13%; padding-right: 13%;  ">
             <div style="background-color: #1b5b31; padding: 120px 0px 120px 0px; padding-left: 7%; padding-right: 7%;">
                 <div class="row" id="contact">
@@ -248,21 +238,15 @@
                         </h3>
                     </div>
                     <div class="col2 col-lg-3 col-sm-12" style=" padding-left: 4%;">
-
                         <p class="contact-text text1" style="color: #f5f0ec;">
                             Śledź nasze najnowsze realizacje!
                         </p>
                         <a href="https://www.instagram.com/" class="contact-btn btn rounded-pill btn-light text1"
                             style="padding: 10px 24px 12px 24px; color: #1b5b31;">Instagram</a>
-
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
         <div style="padding: 80px 14%; background-color: #111111;">
             <div class="row" style="margin-bottom: 62px;">
                 <div class="col-12 col-lg-2" style="padding: 15px 0;"><img src="icons/logo-giarddesign-whte.svg"
@@ -276,30 +260,23 @@
                                 style="padding: 12px 24px 14px 24px; margin-left: 30px;">
                                 Skontaktuj się z nami
                             </button></a></p>
-
-
                 </div>
             </div>
             <hr class="line" style="height: 2px; color: #f5f0ec; margin: 0;">
             <div class="row" style="margin-top: 62px;">
                 <div class="col-12 col-lg-12 col-xl-6">
-
                     <a class="link" style="margin-right: 3%;" href="mailto:giarddesign@kontakt.pl">Kontakt</a>
                     <a class="link" style="margin-right: 3%;" href="https://www.instagram.com/">Instagram</a>
                     <a class="link" style="margin-right: 3%;" href="https://www.facebook.com/">Facebook</a>
                     <a class="link" href="https://www.linkedin.com/feed/">LinkedIn</a>
-
-
                 </div>
                 <div class=" footer1 col-12 col-xl-6 text-xl-right">
 
                     <p class="footer-text">000-000-000</p>
                     <a class="link" style="cursor: pointer; margin-left: 24px;"
                         href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
-
                 </div>
             </div>
-
             <div class="row" style="margin-top: 120px;">
                 <div class="col-12 col-md-6">
                     <p class="footer-text">Prawa zastrzeżone &copy; <span class="footer__year text"></span></p>
@@ -309,30 +286,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
 
@@ -343,6 +296,7 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="setheight.js"></script>
 </body>
 
 </html>

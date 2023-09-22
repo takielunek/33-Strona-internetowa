@@ -2,7 +2,8 @@ const sliderBox = document.querySelector('.slider-box')
 const leftBtn = document.querySelector('.btn-left')
 const rightBtn = document.querySelector('.btn-right')
 const carouselImages = document.querySelectorAll('.slider-img')
-const carouselWidth = parseFloat((window.getComputedStyle(document.getElementById("myElement"))).getPropertyValue("width"));
+
+
 
 const carouselSpeed = 3000
 let index = 0
@@ -12,6 +13,8 @@ const handleCarousel = () => {
 }
 let startCarousel = setInterval(handleCarousel, carouselSpeed)
 const changeImage = () => {
+	const carouselWidth = parseFloat((window.getComputedStyle(document.getElementById("myElement"))).getPropertyValue("width"));
+	console.log(carouselWidth)
 	if (index > carouselImages.length - 1) {
 		index = 0
 	} else if (index < 0) {
